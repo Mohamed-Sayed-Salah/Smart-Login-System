@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark group">
+      <div class="container">
+        <a class="navbar-brand" href="#">SMART LOGIN</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link btn btn-logout" href="/" onclick="logout()"
+                >Logout</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main
+      class="container my-5 text-center h-100 d-flex flex-column align-items-center"
+    >
+      <div class="group w-75 p-5 m-auto">
+        <h1 id="welcomeUser"></h1>
+      </div>
+      <table class="table table-striped table-dark mt-5">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Publisher</th>
+            <th scope="col">Title</th>
+            <th scope="col">Image</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </main>
+    <script src="js/home.js"></script>
+  </body>
+</html>
